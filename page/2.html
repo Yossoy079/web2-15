@@ -1,5 +1,5 @@
 <!-- こら！ソースを見ちゃいけません！ -->
-<!-- とりあえずさっきと同じく3.htmlみたいなノリでいいんだよ -->
+<!-- とりあえずさっきと同じく3.htmlみたいなノリでいいよ -->
 
 
 <!DOCTYPE html>
@@ -11,8 +11,8 @@
   <script type="text/javascript">
      $(document).ready(function(){
        $("#quizButton").click(function(){
-          $("#aaa").fadeOut(2000);
-          $("#bbb").toggle("slow");
+          $("#aaa").fadeOut("slow");
+          $("#bbb").fadeIn("slow");
         });
     });
   </script>
@@ -25,8 +25,8 @@
 <img src="web2-15/img/quiz.png" alt="quiz" />
 </br>
 <p><input type="text" name="input1"></p>
-<button id="toggleButton">答える</button>
-<div id="quiz">正解だとここにリンクが出るよ</div>
+<button id="quizButton">答える</button>
+<div id="aaa">正解だとここにリンクが出るよ</div>
 <div id="bbb" style="display: none">違います！</div>
 </body>
 </html>
