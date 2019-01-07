@@ -10,8 +10,8 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript">
      $(document).ready(function(){
-       $("#toggleButton").click(function(){
-          $("#aaa").toggle("slow");
+       $("#quizButton").click(function(){
+          $("#aaa").fadeOut(2000);
           $("#bbb").toggle("slow");
         });
     });
@@ -26,7 +26,7 @@
 </br>
 <p><input type="text" name="input1"></p>
 <button id="toggleButton">答える</button>
-<div id="aaa">正解だとここにリンクが出るよ</div>
+<div id="quiz">正解だとここにリンクが出るよ</div>
 <div id="bbb" style="display: none">違います！</div>
 </body>
 </html>
