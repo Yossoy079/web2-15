@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>そらそうだ</title>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript">
+     $(document).ready(function(){
+       $("#toggleButton").click(function(){
+          $("#aaa").toggle("slow");
+          $("#bbb").toggle("slow");
+        });
+    });
+  </script>
+</head>
+<body>
+<p>そのちょうし！！！</p>
+</br>
+<p>Q.この問題に正解すると次のページにいけるよ</br><img src="img/quiz.png" alt="title" />
+</br><input type="text" name="input1"></p>
+<button id="toggleButton">答える</button>
+<div id="aaa">正解だとここにリンクが出るよ</div>
+<div id="goodNight" style="display: none">違います！</div>
+</body>
+</html>
